@@ -253,12 +253,18 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>ChromeReport.html</h1>
-    <p>Report generated on 07-Jan-2024 at 08:22:58 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 12-Jan-2024 at 08:01:04 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
+        <td>Environment</td>
+        <td>QA Environment</td></tr>
+      <tr>
         <td>JAVA_HOME</td>
         <td>C:\Program Files\Java\jdk-17</td></tr>
+      <tr>
+        <td>Module</td>
+        <td>User Profile</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "pytest": "7.3.1"}</td></tr>
@@ -266,14 +272,17 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Platform</td>
         <td>Windows-10-10.0.19045-SP0</td></tr>
       <tr>
-        <td>Plugins</td>
-        <td>{"allure-pytest": "2.13.2", "html": "3.2.0", "metadata": "2.0.4", "xdist": "3.2.1"}</td></tr>
+        <td>Project Name</td>
+        <td>CredKart</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.11.4</td></tr></table>
+        <td>3.11.4</td></tr>
+      <tr>
+        <td>Tester</td>
+        <td>Vishal</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 23.44 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 26.37 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -284,21 +293,32 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td class="col-name">testCases/test_UserProfile.py::Test_User_Profile::test_UserRegistration_001</td>
-          <td class="col-duration">12.37</td>
+          <td class="col-duration">12.27</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching Edge Browser
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_User_Profile:test_UserProfile.py:21 test_UserRegistration_001 is started
+INFO     Test_User_Profile:test_UserProfile.py:28  Opening Browser
+INFO     Test_User_Profile:test_UserProfile.py:34 Going to Url--&gt;https://automation.credence.in/register
+INFO     Test_User_Profile:test_UserProfile.py:39 Entering the name
+INFO     Test_User_Profile:test_UserProfile.py:45 Entering the Email--&gt;rvkx@outlook.com
+INFO     Test_User_Profile:test_UserProfile.py:51 Entering the password
+INFO     Test_User_Profile:test_UserProfile.py:56 Entering the confirm password
+INFO     Test_User_Profile:test_UserProfile.py:62 Clicking on Register Button
+INFO     Test_User_Profile:test_UserProfile.py:74 test_UserRegistration_001 is pass
+INFO     Test_User_Profile:test_UserProfile.py:85 test_UserRegistration_001 is completed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCases/test_UserProfile.py::Test_User_Profile::test_UserLogin_002</td>
-          <td class="col-duration">10.70</td>
+          <td class="col-duration">12.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching Edge Browser
+<br/></div></td></tr></tbody></table></body></html>
