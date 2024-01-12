@@ -48,10 +48,10 @@ def setup(browser):
     # if browser == 'headless':
     else:
         print("Headless mode")
-        # chrome_options = webdriver.ChromeOptions()
-        # chrome_options.add_argument("headless")
-        # driver = webdriver.Chrome(options= chrome_options)
-        driver = webdriver.Chrome()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument("headless")
+        driver = webdriver.Chrome(options= chrome_options)
+        #driver = webdriver.Chrome()
     driver.maximize_window()
     yield driver  #
     driver.quit()
